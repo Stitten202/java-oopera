@@ -9,6 +9,10 @@ public class Person {
         this.gender = gender;
     }
 
+    public String getFullName() {
+        return name + " " + surname;
+    }
+
     @Override
     public String toString() {
         return name + " " + surname + " (" + gender + ")";

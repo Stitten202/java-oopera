@@ -12,6 +12,10 @@ public class Actor extends Person {
         return height;
     }
 
+    public String getSurname() {
+        return surname;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;

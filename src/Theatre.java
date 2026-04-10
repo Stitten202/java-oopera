@@ -35,12 +35,12 @@ public class Theatre {
 
         //Заменяем актёра в одном из спектаклей
         Actor newActor = new Actor("Ольга", "Смирнова", Gender.FEMALE, 1.68);
-        balletShow.replaceActor(actor3, newActor);
+        balletShow.replaceActor(actor3, "Смирнова");
         balletShow.printActorsList();
 
         //Пытаемся заменить несуществующего актёра
         Actor nonExistentActor = new Actor("Неизвестный", "Актёр", Gender.MALE, 1.80);
-        regularShow.replaceActor(nonExistentActor, actor1);
+        regularShow.replaceActor(nonExistentActor, "Петров");
 
         //Выводим либретто для оперного и балетного спектакля
         operaShow.printLibretto();

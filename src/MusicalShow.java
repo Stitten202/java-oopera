@@ -1,5 +1,5 @@
 public class MusicalShow extends Show {
-    public String musicAuthor;
+    private String musicAuthor;
     private String librettoText;
 
     public MusicalShow(String title, int duration, Director director,
@@ -17,5 +17,9 @@ public class MusicalShow extends Show {
 
     public String getTitle() {
         return super.toString().split(": ")[1].split(",")[0];
+    }
+
+    public String getMusicAuthor() {
+        return musicAuthor;
     }
 }

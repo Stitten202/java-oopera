@@ -10,7 +10,7 @@ public class Opera extends MusicalShow {
     @Override
     public String toString() {
         return super.toString() +
-                ", автор музыки: " + musicAuthor +
+                ", автор музыки: " + getMusicAuthor() +
                 ", размер хора: " + choirSize + " человек";
     }
 }

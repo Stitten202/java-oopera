@@ -9,6 +9,6 @@ public class Ballet extends MusicalShow {
 
     @Override
     public String toString() {
-        return super.toString() + ", автор музыки: " + musicAuthor + ", хореограф: " + choreographer;
+        return super.toString() + ", автор музыки: " + getMusicAuthor() + ", хореограф: " + choreographer;
     }
 }
